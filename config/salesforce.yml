@@ -1,4 +1,5 @@
 common: &common
+  api_version: '39.0'
   username: 'rutvij.pandya.2010@gmail.com'
   password: 'Idy@dec22sf'
   security_token: 'S46dSbFeJibvDzpwEvtojUdZO'

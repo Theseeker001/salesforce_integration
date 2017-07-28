@@ -3065,3 +3065,7 @@ Completed 200 OK in 69ms (Views: 67.2ms | ActiveRecord: 0.0ms)
   [1m[36mSQL (0.5ms)[0m  [1mUPDATE `delayed_jobs` SET `delayed_jobs`.`locked_at` = '2017-07-25 10:15:52.000000', `delayed_jobs`.`locked_by` = 'host:Apples-MacBook-Pro-3.local pid:5536' WHERE ((run_at <= '2017-07-25 10:15:52.256840' AND (locked_at IS NULL OR locked_at < '2017-07-25 10:10:52.256867') OR locked_by = 'host:Apples-MacBook-Pro-3.local pid:5536') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT 1[0m
   [1m[35mSQL (0.6ms)[0m  UPDATE `delayed_jobs` SET `delayed_jobs`.`locked_at` = '2017-07-25 10:16:52.000000', `delayed_jobs`.`locked_by` = 'host:Apples-MacBook-Pro-3.local pid:5536' WHERE ((run_at <= '2017-07-25 10:16:52.296225' AND (locked_at IS NULL OR locked_at < '2017-07-25 10:11:52.296250') OR locked_by = 'host:Apples-MacBook-Pro-3.local pid:5536') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT 1
   [1m[36mSQL (0.5ms)[0m  [1mUPDATE `delayed_jobs` SET `delayed_jobs`.`locked_at` = '2017-07-25 10:17:52.000000', `delayed_jobs`.`locked_by` = 'host:Apples-MacBook-Pro-3.local pid:5536' WHERE ((run_at <= '2017-07-25 10:17:52.321410' AND (locked_at IS NULL OR locked_at < '2017-07-25 10:12:52.321433') OR locked_by = 'host:Apples-MacBook-Pro-3.local pid:5536') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT 1[0m
+===== Task called
+===== Task called
+===== Task called
+------- LOG: Stream started
