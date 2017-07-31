@@ -4,8 +4,7 @@ class User < ActiveRecord::Base
 
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
-
-  # after_create :generate_lead
+  
   after_save :create_update_lead
 
   def name
@@ -17,11 +16,6 @@ class User < ActiveRecord::Base
   end
 
   private
-
-  # def generate_lead
-  #   Rails.logger.info "------ user generate lead"
-  #   Delayed::Job.enqueue(SalesforceLeadJob.new(id))
-  # end
 
   def create_update_lead
     if (self.changed & ["first_name", "last_name", "company", "email", "phone"]).present?
