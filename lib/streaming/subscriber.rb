@@ -24,7 +24,7 @@ module Streaming
       EM.run do
         @client.subscribe @stream_topic_name do |message|
           begin
-            Streaming::Parser.new(@stream_topic_name, message['sobject']).parse_response
+            Parser.new(@stream_topic_name, message['sobject']).parse_response
           rescue Exception => e
             p e
           end
