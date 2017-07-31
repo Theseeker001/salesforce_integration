@@ -24,9 +24,7 @@ class User < ActiveRecord::Base
   # end
 
   def create_update_lead
-    Rails.logger.info "------ user update lead"
     if (self.changed & ["first_name", "last_name", "company", "email", "phone"]).present?
-      Rails.logger.info "------ user update lead - changed"
       Delayed::Job.enqueue(SalesforceLeadJob.new(id))
     end
   end

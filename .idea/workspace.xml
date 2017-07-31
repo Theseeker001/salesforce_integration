@@ -2,22 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a693f976-3ac4-4b6e-adbe-4388a42d808f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/salesforce/util.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/streaming/parser.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tasks/onetimer/salesforce/create_account_and_contact_push_topic.rake" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/salesforce/streaming_handler.rb" afterPath="$PROJECT_DIR$/lib/streaming/subscriber.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/jobs/salesforce_lead_job.rb" afterPath="$PROJECT_DIR$/app/jobs/salesforce_lead_job.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/lead.rb" afterPath="$PROJECT_DIR$/app/models/lead.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/salesforce/account.rb" afterPath="$PROJECT_DIR$/lib/salesforce/account.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/salesforce/base.rb" afterPath="$PROJECT_DIR$/lib/salesforce/base.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/salesforce/contact.rb" afterPath="$PROJECT_DIR$/lib/salesforce/contact.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/salesforce/lead.rb" afterPath="$PROJECT_DIR$/lib/salesforce/lead.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/salesforce/push_topic.rb" afterPath="$PROJECT_DIR$/lib/salesforce/push_topic.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/tasks/job/salesforce/streaming.rake" afterPath="$PROJECT_DIR$/lib/tasks/job/salesforce/streaming.rake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/delayed_job.log" afterPath="$PROJECT_DIR$/log/delayed_job.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/development.log" afterPath="$PROJECT_DIR$/log/development.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/stream_lead.log" afterPath="$PROJECT_DIR$/log/stream_lead.log" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -43,11 +29,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="parser.rb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="parser.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/streaming/parser.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="25" lean-forward="true" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+            <state relative-caret-position="315">
+              <caret line="21" column="34" lean-forward="false" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user.rb" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -161,6 +157,7 @@
         <option value="$PROJECT_DIR$/app/jobs/salesforce_lead_job.rb" />
         <option value="$PROJECT_DIR$/app/models/lead.rb" />
         <option value="$PROJECT_DIR$/lib/streaming/parser.rb" />
+        <option value="$PROJECT_DIR$/app/models/user.rb" />
       </list>
     </option>
   </component>
@@ -424,12 +421,12 @@
       <workItem from="1500987497140" duration="376000" />
       <workItem from="1500987963369" duration="2244000" />
       <workItem from="1501076265102" duration="5574000" />
-      <workItem from="1501223301083" duration="14381000" />
+      <workItem from="1501223301083" duration="14451000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22575000" />
+    <option name="totallyTimeSpent" value="22645000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="10" y="30" width="1260" height="761" extended-state="0" />
@@ -646,14 +643,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" lean-forward="true" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/lead.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -680,8 +669,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/streaming/parser.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="25" lean-forward="true" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+        <state relative-caret-position="315">
+          <caret line="21" column="34" lean-forward="false" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding />
         </state>
       </provider>
