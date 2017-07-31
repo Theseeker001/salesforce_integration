@@ -199,3 +199,10 @@ I, [2017-07-25T13:53:01.400108 #5536]  INFO -- : 2017-07-25T13:53:01+0530: [Work
 I, [2017-07-25T13:53:01.532688 #5536]  INFO -- : 2017-07-25T13:53:01+0530: [Worker(host:Apples-MacBook-Pro-3.local pid:5536)] Job SalesforceLeadJob (id=28) (queue=default) RUNNING
 I, [2017-07-25T13:53:04.908329 #5536]  INFO -- : 2017-07-25T13:53:04+0530: [Worker(host:Apples-MacBook-Pro-3.local pid:5536)] Job SalesforceLeadJob (id=28) (queue=default) COMPLETED after 3.3755
 I, [2017-07-25T13:53:04.910130 #5536]  INFO -- : 2017-07-25T13:53:04+0530: [Worker(host:Apples-MacBook-Pro-3.local pid:5536)] 1 jobs processed at 0.2868 j/s, 0 failed
+I, [2017-07-31T18:54:25.029966 #6161]  INFO -- : 2017-07-31T18:54:25+0530: [Worker(host:Apples-MacBook-Pro-3.local pid:6161)] Starting job worker
+I, [2017-07-31T18:55:25.227330 #6161]  INFO -- : 2017-07-31T18:55:25+0530: [Worker(host:Apples-MacBook-Pro-3.local pid:6161)] Job SalesforceLeadJob (id=26) (queue=default) RUNNING
+I, [2017-07-31T18:55:32.045334 #6161]  INFO -- : 2017-07-31T18:55:32+0530: [Worker(host:Apples-MacBook-Pro-3.local pid:6161)] Job SalesforceLeadJob (id=26) (queue=default) COMPLETED after 6.8179
+I, [2017-07-31T18:55:32.047055 #6161]  INFO -- : 2017-07-31T18:55:32+0530: [Worker(host:Apples-MacBook-Pro-3.local pid:6161)] 1 jobs processed at 0.1453 j/s, 0 failed
+I, [2017-07-31T18:56:32.075346 #6161]  INFO -- : 2017-07-31T18:56:32+0530: [Worker(host:Apples-MacBook-Pro-3.local pid:6161)] Job SalesforceLeadJob (id=27) (queue=default) RUNNING
+I, [2017-07-31T18:56:35.293720 #6161]  INFO -- : 2017-07-31T18:56:35+0530: [Worker(host:Apples-MacBook-Pro-3.local pid:6161)] Job SalesforceLeadJob (id=27) (queue=default) COMPLETED after 3.2183
+I, [2017-07-31T18:56:35.295566 #6161]  INFO -- : 2017-07-31T18:56:35+0530: [Worker(host:Apples-MacBook-Pro-3.local pid:6161)] 1 jobs processed at 0.3100 j/s, 0 failed

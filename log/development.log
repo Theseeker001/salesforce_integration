@@ -3069,3 +3069,199 @@ Completed 200 OK in 69ms (Views: 67.2ms | ActiveRecord: 0.0ms)
 ===== Task called
 ===== Task called
 ------- LOG: Stream started
+  [1m[36mLead Load (18.6ms)[0m  [1mSELECT `leads`.* FROM `leads` WHERE `leads`.`salesforce_id` = '0017F000005wmP6QAI'[0m
+  [1m[35mLead Load (0.5ms)[0m  SELECT  `leads`.* FROM `leads`  ORDER BY `leads`.`id` DESC LIMIT 1
+  [1m[36mLead Load (0.6ms)[0m  [1mSELECT `leads`.* FROM `leads` WHERE `leads`.`salesforce_id` = '00Q7F000001D2xtUAC'[0m
+  [1m[35mSQL (0.8ms)[0m  UPDATE `leads` SET `leads`.`salesforce_id` = '00Q7F000001D2xtUAC', `leads`.`phone` = '(8237312820' WHERE `leads`.`salesforce_id` = '00Q7F000001D2xtUAC'
+Mysql2::Error: Unknown column 'leads.phone' in 'field list': UPDATE `leads` SET `leads`.`salesforce_id` = '00Q7F000001D2xtUAC', `leads`.`phone` = '(8237312820' WHERE `leads`.`salesforce_id` = '00Q7F000001D2xtUAC'
+  [1m[36mSQL (0.6ms)[0m  [1mUPDATE `leads` SET `leads`.`salesforce_id` = '00Q7F000001D2xtUAC', `leads`.`phone` = '8237312820' WHERE `leads`.`salesforce_id` = '00Q7F000001D2xtUAC'[0m
+Mysql2::Error: Unknown column 'leads.phone' in 'field list': UPDATE `leads` SET `leads`.`salesforce_id` = '00Q7F000001D2xtUAC', `leads`.`phone` = '8237312820' WHERE `leads`.`salesforce_id` = '00Q7F000001D2xtUAC'
+  [1m[35mSQL (0.9ms)[0m  UPDATE `leads` SET `leads`.`phone` = '8237312820' WHERE `leads`.`salesforce_id` = '00Q7F000001D2xtUAC'
+Mysql2::Error: Unknown column 'leads.phone' in 'field list': UPDATE `leads` SET `leads`.`phone` = '8237312820' WHERE `leads`.`salesforce_id` = '00Q7F000001D2xtUAC'
+  [1m[36mLead Load (0.4ms)[0m  [1mSELECT  `leads`.* FROM `leads`  ORDER BY `leads`.`id` ASC LIMIT 1[0m
+  [1m[35mSQL (78.2ms)[0m  UPDATE `leads` SET `leads`.`salesforce_id` = '00Q7F000001D2xtUAC', `leads`.`status` = 0 WHERE `leads`.`salesforce_id` = '00Q7F000001D2xtUAC'
+  [1m[36mLead Load (0.4ms)[0m  [1mSELECT  `leads`.* FROM `leads`  ORDER BY `leads`.`id` DESC LIMIT 1[0m
+  [1m[35mLead Load (0.5ms)[0m  SELECT `leads`.* FROM `leads` WHERE `leads`.`salesforce_id` = '00Q7F000001D2xtUAC'
+  [1m[36mLead Load (43.1ms)[0m  [1mSELECT  `leads`.* FROM `leads` WHERE `leads`.`salesforce_id` = '00Q7F000001D2xtUAC'  ORDER BY `leads`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.7ms)[0m  BEGIN
+  [1m[36mSQL (16.2ms)[0m  [1mUPDATE `leads` SET `status` = 3, `updated_at` = '2017-07-31 12:35:37.986815' WHERE `leads`.`id` = 8[0m
+  [1m[35m (16.0ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36mLead Load (0.5ms)[0m  [1mSELECT  `leads`.* FROM `leads` WHERE `leads`.`salesforce_id` = '00Q7F000001D2iEUAS'  ORDER BY `leads`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE `leads` SET `status` = 1, `updated_at` = '2017-07-31 13:10:26.773162' WHERE `leads`.`id` = 1[0m
+  [1m[35m (31.2ms)[0m  COMMIT
+  [1m[36mLead Load (0.4ms)[0m  [1mSELECT  `leads`.* FROM `leads` WHERE `leads`.`salesforce_id` = '00Q7F000001D2iEUAS'  ORDER BY `leads`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE `leads` SET `status` = 0, `updated_at` = '2017-07-31 13:11:48.561437' WHERE `leads`.`id` = 1[0m
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36mLead Load (0.5ms)[0m  [1mSELECT  `leads`.* FROM `leads` WHERE `leads`.`salesforce_id` = '00Q7F000001D2iEUAS'  ORDER BY `leads`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mSQL (1.2ms)[0m  [1mUPDATE `leads` SET `status` = 1, `updated_at` = '2017-07-31 13:12:10.849644' WHERE `leads`.`id` = 1[0m
+  [1m[35m (2.9ms)[0m  COMMIT
+  [1m[36mLead Load (0.5ms)[0m  [1mSELECT  `leads`.* FROM `leads` WHERE `leads`.`salesforce_id` = '00Q7F000001D2iJUAS'  ORDER BY `leads`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE `leads` SET `status` = 3, `updated_at` = '2017-07-31 13:12:58.903060' WHERE `leads`.`id` = 6[0m
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36mLead Load (1.7ms)[0m  [1mSELECT  `leads`.* FROM `leads` WHERE `leads`.`salesforce_id` = '00Q7F000001D2iJUAS'  ORDER BY `leads`.`id` ASC LIMIT 1[0m
+  [1m[35m (1.2ms)[0m  BEGIN
+  [1m[36mSQL (1.4ms)[0m  [1mUPDATE `leads` SET `status` = 1, `updated_at` = '2017-07-31 13:13:10.911147' WHERE `leads`.`id` = 6[0m
+  [1m[35m (1.0ms)[0m  COMMIT
+  [1m[36mLead Load (0.7ms)[0m  [1mSELECT  `leads`.* FROM `leads` WHERE `leads`.`salesforce_id` = '00Q7F000001D2iJUAS'  ORDER BY `leads`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (23.9ms)[0m  [1mUPDATE `leads` SET `status` = 2, `updated_at` = '2017-07-31 13:15:06.303148' WHERE `leads`.`id` = 6[0m
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36mLead Load (0.6ms)[0m  [1mSELECT  `leads`.* FROM `leads` WHERE `leads`.`salesforce_id` = '00Q7F000001D2vdUAC'  ORDER BY `leads`.`id` ASC LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE `leads` SET `status` = 1, `updated_at` = '2017-07-31 13:18:52.015056' WHERE `leads`.`id` = 7[0m
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36mLead Load (0.3ms)[0m  [1mSELECT  `leads`.* FROM `leads`  ORDER BY `leads`.`id` ASC LIMIT 1[0m
+  [1m[35mLead Load (0.3ms)[0m  SELECT  `leads`.* FROM `leads`  ORDER BY `leads`.`id` ASC LIMIT 1
+
+
+Started GET "/" for ::1 at 2017-07-31 18:52:03 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (9.8ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 17  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered home/index.html.erb within layouts/application (20.7ms)
+Completed 200 OK in 1098ms (Views: 1062.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/application.self-907d570e9d9979a3d6c4f7248a4e06757b2df4b3d840769d6a46d62df6123496.css?body=1" for ::1 at 2017-07-31 18:52:05 +0530
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2017-07-31 18:52:05 +0530
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for ::1 at 2017-07-31 18:52:05 +0530
+
+
+Started GET "/assets/jquery.turbolinks.self-176b9819f30444d441e820bbccd3264fe57753aeafd54dec732b0dbc77129a2a.js?body=1" for ::1 at 2017-07-31 18:52:05 +0530
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-07-31 18:52:05 +0530
+
+
+Started GET "/assets/bootstrap/dropdown.self-561cca1cbaf67474e01e9536f106bad541594860a6df997004591c1c1957a147.js?body=1" for ::1 at 2017-07-31 18:52:05 +0530
+
+
+Started GET "/assets/application.self-b870f4765c2fcbf8cabec8478e3e32aa02ac855d9f609c451d170b187ee785a3.js?body=1" for ::1 at 2017-07-31 18:52:05 +0530
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2017-07-31 18:52:05 +0530
+
+
+Started DELETE "/users/sign_out" for ::1 at 2017-07-31 18:52:08 +0530
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"GpFSDZMK486IA+ncWMxxQIUhFkSkdnzyVcrJpTJHmUkIKSOUd2lbQM7z3/To/MpNFfeGKheuTFezPrvwd5PXJw=="}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 17  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+------ user update lead
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 28ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2017-07-31 18:52:08 +0530
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 55ms (Views: 53.4ms | ActiveRecord: 0.0ms)
+  [1m[36mSQL (48.5ms)[0m  [1mUPDATE `delayed_jobs` SET `delayed_jobs`.`locked_at` = '2017-07-31 13:24:25.000000', `delayed_jobs`.`locked_by` = 'host:Apples-MacBook-Pro-3.local pid:6161' WHERE ((run_at <= '2017-07-31 13:24:25.071794' AND (locked_at IS NULL OR locked_at < '2017-07-31 13:19:25.071832') OR locked_by = 'host:Apples-MacBook-Pro-3.local pid:6161') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT 1[0m
+
+
+Started GET "/users/sign_up" for ::1 at 2017-07-31 18:54:46 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (4.9ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (59.5ms)
+Completed 200 OK in 109ms (Views: 107.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2017-07-31 18:55:18 +0530
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QuM9VyaxDmLOh+DUv/YsLacKd/zpHebMv/2XTdwtxP4uyrfOGTifSIJ7Nh+B+EGp66HXnX8oi+YVuE4sjOLfKA==", "user"=>{"first_name"=>"test integration", "last_name"=>"full", "email"=>"rutvij+15@idyllic.co", "phone"=>"8237312819", "company"=>"delayed job", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mUser Exists (15.2ms)[0m  [1mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'rutvij+15@idyllic.co' LIMIT 1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO `users` (`email`, `encrypted_password`, `first_name`, `last_name`, `phone`, `company`, `created_at`, `updated_at`) VALUES ('rutvij+15@idyllic.co', '$2a$10$wWsAlGXu/IVMUlszEUNL4u9I/rBM0qxz1obZ517sMDavBjJ5gxLkC', 'test integration', 'full', '8237312819', 'delayed job', '2017-07-31 13:25:19.136461', '2017-07-31 13:25:19.136461')
+------ user update lead
+------ user update lead - changed
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO `delayed_jobs` (`handler`, `queue`, `run_at`, `created_at`, `updated_at`) VALUES ('--- !ruby/struct:SalesforceLeadJob\nuser_id: 18\n', 'default', '2017-07-31 13:25:19.169843', '2017-07-31 13:25:19.178499', '2017-07-31 13:25:19.178499')[0m
+  [1m[35m (15.8ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  UPDATE `users` SET `last_sign_in_at` = '2017-07-31 13:25:19.198109', `current_sign_in_at` = '2017-07-31 13:25:19.198109', `last_sign_in_ip` = '::1', `current_sign_in_ip` = '::1', `sign_in_count` = 1, `updated_at` = '2017-07-31 13:25:19.199913' WHERE `users`.`id` = 18
+------ user update lead
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 239ms (ActiveRecord: 34.9ms)
+
+
+Started GET "/" for ::1 at 2017-07-31 18:55:19 +0530
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 18  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered home/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 33ms (Views: 32.2ms | ActiveRecord: 0.5ms)
+  [1m[35mSQL (1.1ms)[0m  UPDATE `delayed_jobs` SET `delayed_jobs`.`locked_at` = '2017-07-31 13:25:25.000000', `delayed_jobs`.`locked_by` = 'host:Apples-MacBook-Pro-3.local pid:6161' WHERE ((run_at <= '2017-07-31 13:25:25.165998' AND (locked_at IS NULL OR locked_at < '2017-07-31 13:20:25.166019') OR locked_by = 'host:Apples-MacBook-Pro-3.local pid:6161') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT 1
+  [1m[36mDelayed::Backend::ActiveRecord::Job Load (0.4ms)[0m  [1mSELECT  `delayed_jobs`.* FROM `delayed_jobs` WHERE `delayed_jobs`.`locked_by` = 'host:Apples-MacBook-Pro-3.local pid:6161' AND `delayed_jobs`.`locked_at` = '2017-07-31 13:25:25.000000' AND `delayed_jobs`.`failed_at` IS NULL  ORDER BY `delayed_jobs`.`id` ASC LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  id, first_name, last_name, email, phone, company FROM `users` WHERE `users`.`id` = 18  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mLead Load (8.5ms)[0m  [1mSELECT  `leads`.* FROM `leads` WHERE `leads`.`user_id` = 18 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `leads` (`user_id`, `created_at`, `updated_at`) VALUES (18, '2017-07-31 13:25:26.591709', '2017-07-31 13:25:26.591709')[0m
+  [1m[35m (16.5ms)[0m  COMMIT
+  [1m[36mSQL (57.4ms)[0m  [1mUPDATE `leads` SET `leads`.`salesforce_id` = '00Q7F000001DFfPUAW' WHERE `leads`.`user_id` = 18[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM `delayed_jobs` WHERE `delayed_jobs`.`id` = 26[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE `delayed_jobs` SET `delayed_jobs`.`locked_at` = '2017-07-31 13:25:32.000000', `delayed_jobs`.`locked_by` = 'host:Apples-MacBook-Pro-3.local pid:6161' WHERE ((run_at <= '2017-07-31 13:25:32.045446' AND (locked_at IS NULL OR locked_at < '2017-07-31 13:20:32.045474') OR locked_by = 'host:Apples-MacBook-Pro-3.local pid:6161') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT 1[0m
+  [1m[35mSQL (0.7ms)[0m  UPDATE `delayed_jobs` SET `delayed_jobs`.`locked_at` = '2017-07-31 13:25:32.000000', `delayed_jobs`.`locked_by` = 'host:Apples-MacBook-Pro-3.local pid:6161' WHERE ((run_at <= '2017-07-31 13:25:32.047120' AND (locked_at IS NULL OR locked_at < '2017-07-31 13:20:32.047132') OR locked_by = 'host:Apples-MacBook-Pro-3.local pid:6161') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT 1
+  [1m[36mLead Load (0.8ms)[0m  [1mSELECT  `leads`.* FROM `leads` WHERE `leads`.`salesforce_id` = '00Q7F000001DFfPUAW'  ORDER BY `leads`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE `leads` SET `status` = 0, `updated_at` = '2017-07-31 13:25:33.141106' WHERE `leads`.`id` = 9[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+
+
+Started GET "/users/edit" for ::1 at 2017-07-31 18:56:09 +0530
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 18  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered devise/registrations/edit.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 59ms (Views: 57.4ms | ActiveRecord: 0.4ms)
+
+
+Started PUT "/users" for ::1 at 2017-07-31 18:56:18 +0530
+Processing by Devise::RegistrationsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Bt/T45DfirWfYhQTY2My178qgkbTO0LG3PfSWWj2NERq9ll6r1Ybn9OewthdbV9T84EiJ0UOL+x2sgs4ODkvkg==", "user"=>{"first_name"=>"integration", "last_name"=>"full", "email"=>"rutvij+15@idyllic.co", "phone"=>"8237312819", "company"=>"delayed job", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "current_password"=>"[FILTERED]"}, "commit"=>"Update"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 18  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 18 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE `users` SET `first_name` = 'integration', `updated_at` = '2017-07-31 13:26:19.047747' WHERE `users`.`id` = 18[0m
+------ user update lead
+------ user update lead - changed
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `delayed_jobs` (`handler`, `queue`, `run_at`, `created_at`, `updated_at`) VALUES ('--- !ruby/struct:SalesforceLeadJob\nuser_id: 18\n', 'default', '2017-07-31 13:26:19.051698', '2017-07-31 13:26:19.051881', '2017-07-31 13:26:19.051881')
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 99ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/" for ::1 at 2017-07-31 18:56:19 +0530
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 18  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered home/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 37ms (Views: 36.4ms | ActiveRecord: 0.4ms)
+  [1m[36mSQL (1.0ms)[0m  [1mUPDATE `delayed_jobs` SET `delayed_jobs`.`locked_at` = '2017-07-31 13:26:32.000000', `delayed_jobs`.`locked_by` = 'host:Apples-MacBook-Pro-3.local pid:6161' WHERE ((run_at <= '2017-07-31 13:26:32.069945' AND (locked_at IS NULL OR locked_at < '2017-07-31 13:21:32.069968') OR locked_by = 'host:Apples-MacBook-Pro-3.local pid:6161') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT 1[0m
+  [1m[35mDelayed::Backend::ActiveRecord::Job Load (0.4ms)[0m  SELECT  `delayed_jobs`.* FROM `delayed_jobs` WHERE `delayed_jobs`.`locked_by` = 'host:Apples-MacBook-Pro-3.local pid:6161' AND `delayed_jobs`.`locked_at` = '2017-07-31 13:26:32.000000' AND `delayed_jobs`.`failed_at` IS NULL  ORDER BY `delayed_jobs`.`id` ASC LIMIT 1
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  id, first_name, last_name, email, phone, company FROM `users` WHERE `users`.`id` = 18  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mLead Load (0.3ms)[0m  SELECT  `leads`.* FROM `leads` WHERE `leads`.`user_id` = 18 LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM `delayed_jobs` WHERE `delayed_jobs`.`id` = 27
+  [1m[36m (38.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE `delayed_jobs` SET `delayed_jobs`.`locked_at` = '2017-07-31 13:26:35.000000', `delayed_jobs`.`locked_by` = 'host:Apples-MacBook-Pro-3.local pid:6161' WHERE ((run_at <= '2017-07-31 13:26:35.293821' AND (locked_at IS NULL OR locked_at < '2017-07-31 13:21:35.293846') OR locked_by = 'host:Apples-MacBook-Pro-3.local pid:6161') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE `delayed_jobs` SET `delayed_jobs`.`locked_at` = '2017-07-31 13:26:35.000000', `delayed_jobs`.`locked_by` = 'host:Apples-MacBook-Pro-3.local pid:6161' WHERE ((run_at <= '2017-07-31 13:26:35.295623' AND (locked_at IS NULL OR locked_at < '2017-07-31 13:21:35.295639') OR locked_by = 'host:Apples-MacBook-Pro-3.local pid:6161') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT 1[0m
+  [1m[36mLead Load (0.5ms)[0m  [1mSELECT  `leads`.* FROM `leads` WHERE `leads`.`salesforce_id` = '00Q7F000001DFfPUAW'  ORDER BY `leads`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mLead Load (0.6ms)[0m  SELECT  `leads`.* FROM `leads` WHERE `leads`.`salesforce_id` = '00Q7F000001DFfPUAW'  ORDER BY `leads`.`id` ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  UPDATE `leads` SET `status` = 1, `updated_at` = '2017-07-31 13:26:46.827884' WHERE `leads`.`id` = 9
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE `delayed_jobs` SET `delayed_jobs`.`locked_at` = '2017-07-31 13:27:35.000000', `delayed_jobs`.`locked_by` = 'host:Apples-MacBook-Pro-3.local pid:6161' WHERE ((run_at <= '2017-07-31 13:27:35.318089' AND (locked_at IS NULL OR locked_at < '2017-07-31 13:22:35.318133') OR locked_by = 'host:Apples-MacBook-Pro-3.local pid:6161') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT 1
+  [1m[36mSQL (0.6ms)[0m  [1mUPDATE `delayed_jobs` SET `delayed_jobs`.`locked_at` = '2017-07-31 13:28:35.000000', `delayed_jobs`.`locked_by` = 'host:Apples-MacBook-Pro-3.local pid:6161' WHERE ((run_at <= '2017-07-31 13:28:35.338758' AND (locked_at IS NULL OR locked_at < '2017-07-31 13:23:35.338788') OR locked_by = 'host:Apples-MacBook-Pro-3.local pid:6161') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT 1[0m
+  [1m[35mSQL (0.6ms)[0m  UPDATE `delayed_jobs` SET `delayed_jobs`.`locked_at` = '2017-07-31 13:29:35.000000', `delayed_jobs`.`locked_by` = 'host:Apples-MacBook-Pro-3.local pid:6161' WHERE ((run_at <= '2017-07-31 13:29:35.362828' AND (locked_at IS NULL OR locked_at < '2017-07-31 13:24:35.362856') OR locked_by = 'host:Apples-MacBook-Pro-3.local pid:6161') AND failed_at IS NULL) ORDER BY priority ASC, run_at ASC LIMIT 1
