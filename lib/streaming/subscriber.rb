@@ -14,7 +14,7 @@ module Streaming
       begin
         subscribe_push_topic
       rescue Restforce::AuthenticationError => e
-        puts e
+        p e
       end
     end
 
@@ -26,12 +26,10 @@ module Streaming
           begin
             Streaming::Parser.new(@stream_topic_name, message['sobject']).parse_response
           rescue Exception => e
-            puts e
+            p e
           end
         end
       end
     end
   end
 end
-
-# Streaming::Parser.new(@stream_topic_name, response).parse_response
